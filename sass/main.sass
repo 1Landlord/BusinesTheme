@@ -1,0 +1,400 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #a9a9a9
+	font-size: 13px
+	opacity: 1
+
+*:-moz-placeholder
+	color: #a9a9a9
+	font-size: 13px
+	opacity: 1
+
+*::-moz-placeholder
+	color: #a9a9a9
+	font-size: 13px
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #a9a9a9
+	font-size: 13px
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #a9a9a9
+	font-size: 13px
+body input:required:valid,
+body textarea:required:valid
+	color: #a9a9a9
+	font-size: 13px
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.header
+			min-height: 700px
+			background-color: $blue
+
+.logo
+	position: absolute
+	right: 5px
+	top: 21px
+	height: auto
+
+.wrapNav
+	background-color: #fff
+
+ul.slimmenu li
+	background-color: #fff
+	border-left: none
+	&:active
+		background-color: $accent
+
+ul.slimmenu li a
+	color: #868686
+	font-size: 14px
+	border-radius: 2px
+	padding: 8px 16px
+	margin: 25px 3px
+	&:hover
+		background-color: $accent
+		color: #fff
+
+ul.slimmenu.collapsed li a
+	text-align: center
+
+.menu-collapser
+	background-color: #fff
+	color: $blue
+
+.collapse-button
+	background-color: $accent
+	&:hover
+		background-color: $accent
+
+.headline
+	margin-top: 4em
+	color: #fff
+	text-align: center
+	h1 
+		font-size: 2.9em
+		font-weight: 900
+		line-height: 20px
+	p
+		font-size: inherit
+
+.topForm
+	text-align: center
+	margin-top: .1em
+
+.formInline .fa
+	left: 8px
+
+.inputGroup
+	position: relative
+	display: inline-block
+	.fa
+		position: absolute
+		color: #a9a9a9
+		top: 20px
+
+.formInline
+	.inputTopForm
+		width: 280px
+		height: 47px
+		padding-left: 30px
+		margin-right: 5px
+		margin-top: 5px
+		border: none
+		border-radius: 2px
+		&:focus
+			outline: none
+	.btnTopForm
+		width: 210px
+		height: 47px
+		margin-top: 30px
+		color: #fff
+		background-color: $accent
+		text-transform: uppercase
+		border: none
+		border-radius: 2px
+
+.mocUp
+	width: 100%
+	margin-top: 4em
+	.images
+		max-width: 650px
+		margin: 0 auto
+
+.ourService
+	background-color: #FFF
+	color: #394b50
+	text-align: center
+	padding: 4em 0
+	.headOur
+		h2
+			font-size: 30px
+			color: #394b50
+			font-weight: 900
+			text-transform: uppercase
+			margin-bottom: 0
+		p
+			margin: 5px 0 60px
+
+.item 
+	text-align: left
+	position: relative
+	padding-left: 5em
+	p
+		color: $textC
+		font-size: 13px
+	h4
+		color: #394b50
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 22px
+	.time
+		position: absolute
+		left: 0
+
+.about
+	display: flex;
+	background-color: $accent
+	flex-wrap: wrap
+	align-items: center
+	.wrapImg
+		flex-grow: 1
+		flex-basis: 540px
+	.wrapContent
+		flex-grow: 1
+		flex-basis: 540px
+		padding: 3em 3em
+		color: #fff
+		h2
+			text-transform: uppercase
+		.btnAbout
+			height: 45px
+			padding: 5px 20px
+			border: 1px solid #e7ad48
+			background-color: $accent
+			border-radius: 2px
+			&:hover
+				background-color: #e7ad48
+
+.prices
+	background-color: #e7edf3
+	text-align: center
+	padding: 4em 0
+	h2
+		text-transform: uppercase
+		color: #394b50
+		font-weight: 900
+		font-size: 30px
+		margin-bottom: 0
+	.nado
+		margin: 0 0 2em
+
+.priceItem
+	margin-top: 50px
+	margin-bottom: 40px
+	background-color: #fff
+	border: 1px solid #ccd5df
+	border-radius: 3px
+	padding: 25px 30px 40px
+	text-transform: uppercase
+	h3
+		font-size: 25px
+		font-weight: 300
+		color: #818b95
+		margin-bottom: 0
+	.wrapPrice
+		position: relative
+		max-width: 100px
+		margin: 0 auto
+		span:nth-child(1),
+		span:nth-child(2)
+			color: $accent
+			font-size: 30px
+		span:nth-child(1)
+			position: absolute
+			left: 5px
+		span:nth-child(2)
+			font-size: 50px
+			font-weight: 800
+		p
+			text-transform: uppercase
+			font-size: 12px
+			margin-top: -20px
+			color: #818b95
+	.cap
+		hr
+			margin: 0
+		p
+			color: #b5bbc1
+			font-size: 13px
+			margin: 9px 0
+	.btnPrice
+		background-color: $accent
+		border: none
+		color: #fff
+		padding: 5px 15px
+		margin-top: 20px
+
+.priceItem.prem
+	background-color: #709dca
+	margin-top: 15px
+	padding: 40px 30px 50px
+	color: #fff
+	h3, .wrapPrice, p
+		color: #fff
+
+.works
+	background-color: #fff
+	text-align: center
+	padding: 4em 0
+	h2
+		text-transform: uppercase
+		color: #394b50
+		font-weight: 900
+		font-size: 30px
+		margin-bottom: 0
+	.nado
+		margin: 0 0 2em
+	.worksItem
+		position: relative
+		margin-top: 3em
+		padding: 20px 0
+		.arr
+			position: absolute
+			top: -10px
+			right: -75px
+		.arrB
+			position: absolute
+			top: 90px
+			right: -75px
+	.capWork
+		margin-top: 3em
+		h4
+			text-transform: uppercase
+			color: #394b50
+		p
+			color: $textC
+
+	.btnWorks
+		background-color: $accent
+		border: none
+		color: #fff
+		padding: 7px 25px
+		border-radius: 2px
+		margin: 2em 0
+
+.clients
+	background-color: $accent
+	text-align: center
+	padding: 4em 0
+	h2
+		text-transform: uppercase
+		color: #fff
+		font-weight: 900
+		font-size: 30px
+		margin-bottom: 0
+	.nado
+		margin: 0 0 2em
+		color: #fff
+
+.clientItem
+	background-color: #FFF
+	position: relative
+	text-align: left
+	padding: 30px 10px 30px	130px 
+	margin-bottom: 1em
+	.foto
+		position: absolute
+		left: 15px
+		top: 45px
+		img
+			width: 100px
+	.capClient
+		font-size: 12px
+		color: $textC
+	span
+		text-transform: uppercase
+	.color
+		color: $accent
+		font-weight: 600
+	.noColor
+		color: $textC
+		font-weight: 600
+
+.contacts
+	background-color: #fff
+	text-align: center
+	padding: 4em 0
+	h2
+		text-transform: uppercase
+		color: $textC
+		font-weight: 900
+		font-size: 30px
+		margin-bottom: 0
+	.nado
+		margin: 0 0 2em
+		color: $textC
+	.formInline
+		margin: 2em 0
+		.inputGroup
+			.inputTopForm
+				border: 1px solid #cbcbcb
+	.wrapMap
+		position: relative
+		.group
+			position: absolute
+			top: 10%
+			left: 50%
+		.tooltip
+			color: #fff
+			background-color: #394b50
+			border-radius: 10em
+			width: 10em
+			height: 10em
+			text-align: center
+			line-height: 9em
+			padding: 10px
+	.slimmenu
+		color: #394b50
+		text-align: center
+	.phone
+		color: #394b50
+	.social
+		color: $blue
+		i
+			padding-right: 5px
+			&:hover
+				color: $accent
+
+footer 
+	color: #fff
+	padding: 10px
+	text-align: center
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+@import "media" // Всегда в конце
